@@ -2,21 +2,14 @@
 
 IRC client inside your Etherpad page, just for fun.
 
-## How to use
-
-* Really?
-
-## Set as disabled by default (not available yet)
+## Configuration
 
 1. Open `settings.json`
 2. Append:
-   `"ep_irc" : {
-      "disabled_by_default" : true
+```json
+    "ep_irc" : {
+      "disabled_by_default" : true,
+      "qchat_url" : 'qchat.rizon.net',
+      "channels" : ['#channel1','#channel2']
     }
-   `
-
-## Change the default IRC channels (not available yet)
-
-## Please add more functionality
-
-I'm available as a gun for hire.
+```

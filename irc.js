@@ -24,5 +24,15 @@ exports.eejsBlock_styles = function (hook_name, args, cb)
 
 exports.eejsBlock_scripts = function (hook_name, args, cb)
 {
-  args.content = '<script src="http://simplewebirc.com/latest.js"></script><script src="../static/plugins/ep_irc/static/js/irc.js"></script>' + args.content;
+  var values = {};
+  values.push('EP_IRC_QCHATURI', settings.ep_irc.qchat_uri);
+  values.push('EP_IRC_CHANNELS', settings.ep_irc.channels);
+  var buffer = '<script src="http://simplewebirc.com/latest.js"></script>';
+  buffer += '<script src="../static/plugins/ep_irc/static/js/irc.js"></script>';
+  buffer += '<script>';
+  for(var key in values) {
+    buffer += 'var '+key+'='+JSON.stringify(values[key])';';
+  }
+  buffer += '</script>';
+  args.content = buffer + args.content;
 }

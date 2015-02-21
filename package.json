@@ -1,23 +1,27 @@
 {
-  "name": "ep_irc",
+  "name": "ep_irc_nex",
   "version": "0.0.4",
   "keywords": [
     "video", "etherpad", "chat", "irc"
   ],
-  "description": "Adds an embedded Freenode Web chat client and autojoins to #Etherpad and #Etherpad-Lite-Dev channels",
+  "description": "Adds an embedded Freenode Web chat client and autojoins to a list of specified channels.  (Fork of ep_irc)",
   "contributors": [
     {
       "name": "John McLear",
       "email": "john@mclear.co.uk",
       "url": "http://mclear.co.uk"
+    },
+    {
+      "name":  "Rob Nelson",
+      "email": "nexisentertainment@gmail.com",
+      "url":   "http://nexisonline.net"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnmclear/ep_irc.git"
+    "url": "git://github.com/N3X15/ep_irc.git"
   },
-  "dependencies": {},
-  "engines": {
-    "node": "*"
-  }
+  "dependencies": {"MODULE": "0.3.20"},
+  "peerDependencies": "ep_etherpad_lite":">=1.5.1",
+  "engines": { "node": ">= 0.6.0"}
 }
