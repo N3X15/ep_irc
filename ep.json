@@ -4,7 +4,7 @@
       "name": "irc_nex",
       "hooks": {
         "eejsBlock_mySettings": "ep_irc_nex/irc",
-        "clientVars": "ep_irc_nex/client:clientVars"
+        "clientVars": "ep_irc_nex/irc:clientVars"
       },
       "client_hooks": {
         "postAceInit": "ep_irc_nex/static/js/postAceInit:postAceInit"
