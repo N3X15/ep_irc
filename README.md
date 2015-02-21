@@ -9,7 +9,7 @@ IRC client inside your Etherpad page, just for fun.
 ```json
     "ep_irc_nex" : {
       "disabled_by_default" : true,
-      "qchat_url" : 'qchat.rizon.net',
+      "qchaturi" : 'qchat.rizon.net',
       "channels" : ['#channel1','#channel2']
     }
 ```
