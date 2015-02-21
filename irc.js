@@ -25,8 +25,8 @@ exports.clientVars = function(hook, context, callback)
 {
   // return the setting to the clientVars, sending the value
   return callback({ 
-    "ep_irc_qchaturi": settings.ep_irc.qchaturi,
-    "ep_irc_channels": settings.ep_irc.channels 
+    "ep_irc_qchaturi": settings.ep_irc_nex.qchaturi,
+    "ep_irc_channels": settings.ep_irc_nex.channels 
   });
 };
 
