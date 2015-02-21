@@ -22,6 +22,6 @@
     "url": "git://github.com/N3X15/ep_irc.git"
   },
   "dependencies": {"MODULE": "0.3.20"},
-  "peerDependencies": "ep_etherpad_lite":">=1.5.1",
+  "peerDependencies": {"ep_etherpad_lite":">=1.5.1"},
   "engines": { "node": ">= 0.6.0"}
 }
