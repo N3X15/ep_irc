@@ -1,12 +1,13 @@
 {
   "parts": [
     {
-      "name": "irc",
+      "name": "irc_nex",
       "hooks": {
-        "eejsBlock_mySettings": "ep_irc/irc"
+        "eejsBlock_mySettings": "ep_irc_nex/irc",
+        "clientVars": "ep_irc_nex/client:clientVars"
       },
       "client_hooks": {
-        "postAceInit": "ep_irc/static/js/postAceInit:postAceInit"
+        "postAceInit": "ep_irc_nex/static/js/postAceInit:postAceInit"
       }
     }
   ]
